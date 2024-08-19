@@ -33,7 +33,7 @@ else:
 
 latest_logs_path = os.path.join(logs_directory, "latest.log")
 
-api_input = input("Do you wish to create a link for your log file? (y/n): ")
+api_input = input("Do you wish to create a link for your log file? [Y/N]: ")
 
 if api_input.lower() == "y":
 
@@ -79,7 +79,7 @@ if api_input.lower() == "y":
         print("latest.log was not found in the specified directory")
     
 
-notepad_input = input("Do you wish to open the specified log in Notepad? (Y/N): ")
+notepad_input = input("Do you wish to open the specified log in Notepad? [Y/N]: ")
 
 if notepad_input.lower() == "y":
 
