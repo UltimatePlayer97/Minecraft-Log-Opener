@@ -35,7 +35,7 @@ latest_logs_path = os.path.join(logs_directory, "latest.log")
 
 api_input = input("Do you wish to create a link for your log file? [Y/N]: ")
 
-if api_input.lower() == "y":
+if api_input.lower() == "y" | api_input.lower() == "yes":
 
     if os.path.exists(latest_logs_path):
         # Read the content of the latest.log file
@@ -81,7 +81,7 @@ if api_input.lower() == "y":
 
 notepad_input = input("Do you wish to open the specified log in Notepad? [Y/N]: ")
 
-if notepad_input.lower() == "y":
+if notepad_input.lower() == "y" | notepad_input.lower() == "yes":
 
     if os_system == "Windows":
             print(f"Opening file in: {latest_logs_path}")
