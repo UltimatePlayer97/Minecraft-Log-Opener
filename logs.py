@@ -1,7 +1,6 @@
 import os
 import platform
 import requests
-import json
 import subprocess
 
 os_system = platform.system()
